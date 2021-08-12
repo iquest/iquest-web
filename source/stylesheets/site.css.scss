@@ -4892,6 +4892,15 @@ form {
       }
       &_domena {
         background-image: url("../images/Refs/domena_background.png");
+        @media screen and (max-width: 850px) {
+          height: 750px;
+        }
+        @media screen and (max-width: 550px) {
+          height: 800px;
+        }
+        @media screen and (max-width: 450px) {
+          height: 870px;
+        }
       }
       @media screen and (max-width: 800px) {
         background-image: none;
@@ -4970,6 +4979,10 @@ form {
         z-index: 5;
         width: 150px;
         position: absolute;
+        @media screen and (max-width: 950px) {
+          bottom: -20px;
+          width: 100px;
+        }
       }
 
       &_servers {
@@ -5104,7 +5117,9 @@ form {
 
       &_points {
         position: absolute;
-        background-color: white;
+
+        background-size: cover;
+        background-position: 100% 0;
         box-shadow: 19px 13px 27px -7px rgba(89, 200, 220, 0.397);
         -webkit-box-shadow: 19px 13px 27px -7px rgba(89, 200, 220, 0.397);
         border-radius: 14px;
@@ -5113,6 +5128,18 @@ form {
         transform: translateX(50%);
         right: 50%;
         width: 70%;
+
+        &-domena {
+          background-image: url("../images/Refs/domena_tablet.png");
+        }
+
+        & > div {
+          max-width: 446px;
+        }
+
+        @media screen and (max-width: 1050px) {
+          background-image: none !important;
+        }
 
         @media screen and (max-width: 500px) {
           padding: 2rem;
