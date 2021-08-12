@@ -4883,11 +4883,16 @@ form {
 .reference {
   &__block {
     &--first {
-      background-image: url("../images/Refs/greenswan_background.png");
       background-size: cover;
       height: 900px;
       position: relative;
 
+      &_greenswan {
+        background-image: url("../images/Refs/greenswan_background.png");
+      }
+      &_domena {
+        background-image: url("../images/Refs/domena_background.png");
+      }
       @media screen and (max-width: 800px) {
         background-image: none;
       }
@@ -4958,13 +4963,33 @@ form {
         left: -35px;
         position: absolute;
       }
+
+      &_wires {
+        bottom: -50px;
+        left: 0px;
+        z-index: 5;
+        width: 150px;
+        position: absolute;
+      }
+
+      &_servers {
+        position: absolute;
+        height: 13rem;
+        width: auto;
+        right: 0;
+        bottom: -18rem;
+        z-index: 5;
+        @media screen and (max-width: 950px) {
+          display: none;
+        }
+      }
     }
     &--second {
       background-color: $white-blue;
       margin-top: -3.7rem;
       position: relative;
       padding: 7rem 0;
-      overflow: hidden;
+      overflow: visible;
       clip-path: polygon(0 22%, 100% 0%, 100% 78%, 0% 100%);
       z-index: 1;
 
