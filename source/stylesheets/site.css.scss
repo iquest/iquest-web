@@ -4888,10 +4888,10 @@ form {
       position: relative;
 
       &_greenswan {
-        background-image: url("../images/Refs/greenswan_background.png");
+        background-image: url("../images/Refs/greenswan_background.webp");
       }
       &_domena {
-        background-image: url("../images/Refs/domena_background.png");
+        background-image: url("../images/Refs/domena_background.webp");
         @media screen and (max-width: 850px) {
           height: 750px;
         }
@@ -4902,6 +4902,11 @@ form {
           height: 870px;
         }
       }
+
+      &_modry_andel {
+        background-image: url("../images/Refs/modry_andel_background.webp");
+      }
+
       @media screen and (max-width: 800px) {
         background-image: none;
       }
@@ -4923,6 +4928,11 @@ form {
 
           @media screen and (max-width: 470px) {
             width: 250px;
+          }
+          &_andel {
+            @media screen and (max-width: 530px) {
+              width: 250px;
+            }
           }
         }
       }
@@ -4985,6 +4995,35 @@ form {
         }
       }
 
+      &_driver {
+        bottom: -50px;
+        left: -53px;
+        z-index: 5;
+        width: 330px;
+        position: absolute;
+        @media screen and (max-width: 1200px) {
+          bottom: 80px;
+        }
+        @media screen and (max-width: 470px) {
+          bottom: -50px;
+        }
+      }
+
+      &_taxi {
+        position: absolute;
+        height: 12rem;
+        width: auto;
+        right: 0;
+        bottom: -15rem;
+        z-index: 5;
+        @media screen and (max-width: 1000px) {
+          height: 11rem;
+        }
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+
       &_servers {
         position: absolute;
         height: 13rem;
@@ -5032,13 +5071,24 @@ form {
       }
     }
     &--third {
-      background-image: url("../images/conference_people.png");
       background-size: cover;
       background-repeat: no-repeat;
       display: flex;
       padding: 5rem 20%;
       background-position: 35% 0;
       margin-top: -3rem;
+
+      &_greenSwan {
+        background-image: url("../images/Refs/greenswan_conference_people.webp");
+      }
+
+      &_domena {
+        background-image: url("../images/Refs/domena_server_service.webp");
+      }
+
+      &_andel {
+        background-image: url("../images/Refs/modry_andel_customer.webp");
+      }
 
       @media screen and (max-width: 1000px) {
         padding: 3rem 20%;
@@ -5107,6 +5157,9 @@ form {
       padding-top: 4rem;
       padding-bottom: 14rem;
       margin-top: -5rem;
+      @media screen and (max-width: 900px) {
+        background-image: none;
+      }
 
       &_plan {
         width: 100%;
@@ -5130,7 +5183,11 @@ form {
         width: 70%;
 
         &-domena {
-          background-image: url("../images/Refs/domena_tablet.png");
+          background-image: url("../images/Refs/domena_tablet.webp");
+        }
+
+        &-andel {
+          background-image: url("../images/Refs/modry_andel_tablet.webp");
         }
 
         & > div {
@@ -5265,7 +5322,7 @@ form {
     &--seventh {
       text-align: center;
       padding: 4rem 0;
-      background-image: url("../images/Refs/greenswan_meeting.png");
+      background-image: url("../images/Refs/greenswan_meeting.webp");
       background-position: 65% 0;
       background-size: cover;
       position: relative;
@@ -5301,7 +5358,7 @@ form {
     }
 
     &--eighth {
-      background-image: url("../images/Refs/greenswan_hands.jpg");
+      background-image: url("../images/Refs/greenswan_hands.webp");
       background-size: cover;
       background-position: 100% 31%;
       height: 22rem;
