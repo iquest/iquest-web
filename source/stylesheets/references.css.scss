@@ -57,7 +57,13 @@
         background-image: url("../images/Refs/modry_andel_background.webp");
       }
       &_eurosignal {
-        background-image: url("../images/Refs/eurosignal_background.webp");
+        background-image: url("../images/Refs/eurosignal_background.png");
+        background-image: -webkit-image-set(
+          url("../images/Refs/eurosignal_background.webp") 1x
+        );
+      }
+      &_magistra {
+        background-image: url("../images/Refs/magistra_background.webp");
       }
 
       @media screen and (max-width: 800px) {
@@ -87,6 +93,16 @@
               width: 250px;
             }
           }
+          &_eurosignal {
+            @media screen and (max-width: 340px) {
+              width: 250px;
+            }
+          }
+          &_magistra {
+            @media screen and (max-width: 530px) {
+              width: 250px;
+            }
+          }
         }
       }
 
@@ -95,6 +111,11 @@
         @media screen and (max-width: 1420px) {
           width: 100%;
           margin-top: 5rem;
+        }
+        &_magistra {
+          @media screen and (max-width: 1420px) {
+            margin-top: 0rem;
+          }
         }
       }
 
@@ -214,6 +235,32 @@
           display: none;
         }
       }
+      &_magistra-pills {
+        bottom: -50px;
+        left: -41px;
+        z-index: 5;
+        width: 200px;
+        position: absolute;
+
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
+
+      &_magistra_pills2 {
+        position: absolute;
+        height: 12rem;
+        width: auto;
+        right: 0;
+        bottom: -17rem;
+        z-index: 5;
+        @media screen and (max-width: 1000px) {
+          height: 11rem;
+        }
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
     }
     &--second {
       background-color: var(--white-blue);
@@ -272,6 +319,10 @@
         background-image: url("../images/Refs/eurosignal_meeting.webp");
         padding: 5rem 15%;
       }
+      &_magistra {
+        background-image: url("../images/Refs/magistra_shelf.webp");
+        padding: 5rem 15%;
+      }
 
       @media screen and (max-width: 1000px) {
         padding: 3rem 20%;
@@ -280,6 +331,26 @@
       }
       @media screen and (max-width: 600px) {
         padding: 3rem 10%;
+      }
+
+      &_checkmark-box {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 580px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        & > div {
+          display: flex;
+          width: 40%;
+          margin-bottom: 1rem;
+          margin-right: 1rem;
+          @media screen and (max-width: 580px) {
+            width: 100%;
+          }
+        }
       }
 
       &_title {
@@ -346,14 +417,20 @@
 
       &_plan {
         width: 100%;
+
         @media screen and (max-width: 900px) {
           display: none;
+        }
+
+        &-magistra {
+          max-width: 900px;
+          margin: auto;
         }
       }
 
       &_points {
         position: absolute;
-
+        background-color: white;
         background-size: cover;
         background-position: 100% 0;
         box-shadow: 19px 13px 27px -7px rgba(89, 200, 220, 0.397);
@@ -375,6 +452,10 @@
 
         &-eurosignal {
           background-image: url("../images/Refs/eurosignal_tablet.webp");
+        }
+
+        &-magistra {
+          background-image: url("../images/Refs/magistra_tablet.webp");
         }
 
         & > div {
@@ -405,6 +486,15 @@
       }
       @media screen and (max-width: 380px) {
         padding-top: 30rem;
+      }
+
+      &-magistra {
+        @media screen and (max-width: 500px) {
+          padding-top: 13rem;
+        }
+        @media screen and (max-width: 380px) {
+          padding-top: 13rem;
+        }
       }
 
       &_header {
