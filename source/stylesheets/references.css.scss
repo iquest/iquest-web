@@ -65,6 +65,9 @@
       &_magistra {
         background-image: url("../images/Refs/magistra_background.webp");
       }
+      &_rudolfinum {
+        background-image: url("../images/Refs/rudolfinum_background.webp");
+      }
 
       @media screen and (max-width: 800px) {
         background-image: none;
@@ -261,6 +264,18 @@
           display: none;
         }
       }
+
+      &_statue {
+        bottom: -50px;
+        left: -42px;
+        z-index: 5;
+        width: 110px;
+        position: absolute;
+
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
     }
     &--second {
       background-color: var(--white-blue);
@@ -282,6 +297,13 @@
         margin: auto;
         text-align: center;
         width: 80%;
+
+        &-rudolfinum {
+          width: 57%;
+          @media screen and (max-width: 1000px) {
+            width: 80%;
+          }
+        }
       }
 
       &_pills {
@@ -292,6 +314,19 @@
         top: 23px;
         z-index: 3;
         @media screen and (max-width: 950px) {
+          display: none;
+        }
+      }
+
+      &_rudolfinum_people {
+        position: absolute;
+        height: 16rem;
+        width: auto;
+        right: 0;
+        top: 3rem;
+        z-index: 5;
+
+        @media screen and (max-width: 1000px) {
           display: none;
         }
       }
@@ -321,6 +356,11 @@
       }
       &_magistra {
         background-image: url("../images/Refs/magistra_shelf.webp");
+        padding: 5rem 15%;
+      }
+
+      &_rudolfinum {
+        background-image: url("../images/Refs/rudolfinum_building.webp");
         padding: 5rem 15%;
       }
 
@@ -426,6 +466,11 @@
           max-width: 900px;
           margin: auto;
         }
+
+        &-rudolfinum {
+          max-width: 1200px;
+          margin: auto;
+        }
       }
 
       &_points {
@@ -456,6 +501,10 @@
 
         &-magistra {
           background-image: url("../images/Refs/magistra_tablet.webp");
+        }
+
+        &-rudolfinum {
+          background-image: url("../images/Refs/rudolfinum_tablet.webp");
         }
 
         & > div {
