@@ -56,6 +56,9 @@
       &_modry_andel {
         background-image: url("../images/Refs/modry_andel_background.webp");
       }
+      &_eurosignal {
+        background-image: url("../images/Refs/eurosignal_background.webp");
+      }
 
       @media screen and (max-width: 800px) {
         background-image: none;
@@ -185,6 +188,32 @@
           display: none;
         }
       }
+
+      &_modem {
+        bottom: -50px;
+        left: -41px;
+        z-index: 5;
+        width: 200px;
+        position: absolute;
+
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
+      &_eurosignal_server {
+        position: absolute;
+        height: 12rem;
+        width: auto;
+        right: 0;
+        bottom: -17rem;
+        z-index: 5;
+        @media screen and (max-width: 1000px) {
+          height: 11rem;
+        }
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
     }
     &--second {
       background-color: var(--white-blue);
@@ -238,6 +267,10 @@
 
       &_andel {
         background-image: url("../images/Refs/modry_andel_customer.webp");
+      }
+      &_eurosignal {
+        background-image: url("../images/Refs/eurosignal_meeting.webp");
+        padding: 5rem 15%;
       }
 
       @media screen and (max-width: 1000px) {
@@ -338,6 +371,10 @@
 
         &-andel {
           background-image: url("../images/Refs/modry_andel_tablet.webp");
+        }
+
+        &-eurosignal {
+          background-image: url("../images/Refs/eurosignal_tablet.webp");
         }
 
         & > div {
