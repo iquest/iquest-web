@@ -371,6 +371,15 @@
       background-position: 35% 0;
       margin-top: -3rem;
 
+      @media screen and (max-width: 1000px) {
+        padding: 3rem 20%;
+        display: flex;
+        flex-direction: column;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 3rem 10%;
+      }
+
       &_greenSwan {
         background-image: url("../images/Refs/greenswan_conference_people.webp");
       }
@@ -398,18 +407,31 @@
 
       &_bakker {
         background-image: url("../images/Refs/bakker_truck.webp");
-        padding: 5rem 15%;
+        padding: 5rem 10%;
         display: flex;
         flex-direction: column;
-      }
 
-      @media screen and (max-width: 1000px) {
-        padding: 3rem 20%;
-        display: flex;
-        flex-direction: column;
-      }
-      @media screen and (max-width: 600px) {
-        padding: 3rem 10%;
+        & > div {
+          margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: 1000px) {
+          padding: 5rem 10%;
+          & > div > .reference__block--third_text {
+            margin-left: 2rem;
+          }
+        }
+
+        @media screen and (max-width: 700px) {
+          & > div {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+          & > div > .reference__block--third_text {
+            margin-left: 0rem;
+          }
+        }
       }
 
       &_checkmark-box {
@@ -506,12 +528,12 @@
           display: none;
         }
 
-        &-magistra {
+        &-sm {
           max-width: 900px;
           margin: auto;
         }
 
-        &-rudolfinum {
+        &-md {
           max-width: 1200px;
           margin: auto;
         }
@@ -549,6 +571,10 @@
 
         &-rudolfinum {
           background-image: url("../images/Refs/rudolfinum_tablet.webp");
+        }
+
+        &-bakker {
+          background-image: url("../images/Refs/bakker_tablet.webp");
         }
 
         & > div {
