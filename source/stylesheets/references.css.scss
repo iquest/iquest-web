@@ -69,6 +69,13 @@
         background-image: url("../images/Refs/rudolfinum_background.webp");
       }
 
+      &_bakker {
+        background-image: url("../images/Refs/bakker_background.webp");
+        @media screen and (max-width: 850px) {
+          height: 750px;
+        }
+      }
+
       @media screen and (max-width: 800px) {
         background-image: none;
       }
@@ -115,7 +122,7 @@
           width: 100%;
           margin-top: 5rem;
         }
-        &_magistra {
+        &_phones {
           @media screen and (max-width: 1420px) {
             margin-top: 0rem;
           }
@@ -276,6 +283,31 @@
           display: none;
         }
       }
+
+      &_vegetables {
+        bottom: -50px;
+        left: -41px;
+        z-index: 5;
+        width: 200px;
+        position: absolute;
+
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
+
+      &_green_truck {
+        position: absolute;
+        height: 9rem;
+        width: auto;
+        right: 0;
+        bottom: -14rem;
+        z-index: 5;
+
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
     }
     &--second {
       background-color: var(--white-blue);
@@ -364,6 +396,13 @@
         padding: 5rem 15%;
       }
 
+      &_bakker {
+        background-image: url("../images/Refs/bakker_truck.webp");
+        padding: 5rem 15%;
+        display: flex;
+        flex-direction: column;
+      }
+
       @media screen and (max-width: 1000px) {
         padding: 3rem 20%;
         display: flex;
@@ -404,6 +443,11 @@
         @media screen and (max-width: 1000px) {
           margin: 0;
           margin-bottom: 2rem;
+        }
+
+        &_bakker {
+          width: 170px;
+          margin-right: 0;
         }
       }
       &_text {
