@@ -38,7 +38,7 @@
       position: relative;
 
       &_greenswan {
-        background-image: url("../images/Refs/greenswan_background.webp");
+        background-image: url("../images/Refs/greenswan_background.jpg");
       }
       &_domena {
         background-image: url("../images/Refs/domena_background.webp");
@@ -57,22 +57,22 @@
         background-image: url("../images/Refs/modry_andel_background.webp");
       }
       &_eurosignal {
-        background-image: url("../images/Refs/eurosignal_background.png");
-        background-image: -webkit-image-set(
-          url("../images/Refs/eurosignal_background.webp") 1x
-        );
+        background-image: url("../images/Refs/eurosignal_background.jpg");
+        @media screen and (max-width: 800px) {
+          height: 960px;
+        }
       }
       &_magistra {
-        background-image: url("../images/Refs/magistra_background.webp");
+        background-image: url("../images/Refs/magistra_background.jpg");
       }
       &_rudolfinum {
-        background-image: url("../images/Refs/rudolfinum_background.webp");
+        background-image: url("../images/Refs/rudolfinum_background.jpg");
       }
 
       &_bakker {
-        background-image: url("../images/Refs/bakker_background.webp");
+        background-image: url("../images/Refs/bakker_background.jpg");
         @media screen and (max-width: 850px) {
-          height: 750px;
+          height: 770px;
         }
       }
 
@@ -167,6 +167,18 @@
         position: absolute;
       }
 
+      &_pills2 {
+        position: absolute;
+        height: 13rem;
+        width: auto;
+        right: 0px;
+        bottom: -205px;
+        z-index: 3;
+        @media screen and (max-width: 950px) {
+          display: none;
+        }
+      }
+
       &_wires {
         bottom: -50px;
         left: 0px;
@@ -246,7 +258,7 @@
         }
       }
       &_magistra-pills {
-        bottom: -50px;
+        bottom: -32px;
         left: -41px;
         z-index: 5;
         width: 200px;
@@ -262,7 +274,7 @@
         height: 12rem;
         width: auto;
         right: 0;
-        bottom: -17rem;
+        bottom: -15rem;
         z-index: 5;
         @media screen and (max-width: 1000px) {
           height: 11rem;
@@ -285,7 +297,7 @@
       }
 
       &_vegetables {
-        bottom: -50px;
+        bottom: -33px;
         left: -41px;
         z-index: 5;
         width: 200px;
@@ -313,14 +325,27 @@
       background-color: var(--white-blue);
       margin-top: -3.7rem;
       position: relative;
-      padding: 7rem 0;
+      padding: 6rem 0;
       overflow: visible;
       clip-path: polygon(0 22%, 100% 0%, 100% 78%, 0% 100%);
       z-index: 1;
 
+      &-greenswan {
+        padding: 5rem 0;
+      }
+
+      &-bakker {
+        padding: 6rem 0;
+      }
+
       @media screen and (max-width: 480px) {
         clip-path: polygon(0 11%, 100% 0%, 100% 78%, 0% 95%);
         margin-top: -3rem;
+      }
+
+      &_link {
+        color: black;
+        cursor: pointer;
       }
 
       &_text {
@@ -335,18 +360,6 @@
           @media screen and (max-width: 1000px) {
             width: 80%;
           }
-        }
-      }
-
-      &_pills {
-        position: absolute;
-        height: 13rem;
-        width: auto;
-        right: 0px;
-        top: 23px;
-        z-index: 3;
-        @media screen and (max-width: 950px) {
-          display: none;
         }
       }
 
