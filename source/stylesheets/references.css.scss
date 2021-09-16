@@ -1,0 +1,876 @@
+.reference-modal-noscroll ~ .modal:target {
+  position: fixed;
+}
+
+.company {
+  &-name {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &-solution {
+    color: var(--green-dark);
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &-result {
+    font-weight: bold;
+  }
+
+  &-titles {
+    color: var(--green-dark);
+    font-weight: bold;
+    margin-right: 0rem;
+    width: 115px;
+  }
+}
+
+.reference {
+  &__block {
+    &--span {
+      height: 9rem;
+      position: relative;
+    }
+    &--first {
+      background-size: cover;
+      height: 900px;
+      position: relative;
+
+      @media screen and (max-width: 768px) {
+        height: 800px;
+      }
+
+      &_greenswan {
+        background-image: url("../images/Refs/greenswan_background.jpg");
+      }
+      &_domena {
+        background-image: url("../images/Refs/domena_background.jpg");
+        @media screen and (max-width: 850px) {
+          height: 750px;
+        }
+        @media screen and (max-width: 550px) {
+          height: 700px;
+        }
+        @media screen and (max-width: 450px) {
+          height: 770px;
+        }
+      }
+
+      &_modry_andel {
+        background-image: url("../images/Refs/modry_andel_background.jpg");
+      }
+      &_eurosignal {
+        background-image: url("../images/Refs/eurosignal_background.jpg");
+        @media screen and (max-width: 800px) {
+          height: 960px;
+        }
+        @media screen and (max-width: 768px) {
+          height: 860px;
+        }
+      }
+      &_magistra {
+        background-image: url("../images/Refs/magistra_background.jpg");
+      }
+      &_rudolfinum {
+        background-image: url("../images/Refs/rudolfinum_background.jpg");
+      }
+
+      &_bakker {
+        background-image: url("../images/Refs/bakker_background.jpg");
+        @media screen and (max-width: 850px) {
+          height: 770px;
+        }
+        @media screen and (max-width: 768px) {
+          height: 670px;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        background-image: none;
+      }
+
+      &_info {
+        padding-top: 280px;
+        padding-left: 15%;
+        @media screen and (max-width: 1200px) {
+          padding-left: 10%;
+        }
+        @media screen and (max-width: 850px) {
+          width: 80%;
+          padding-left: 0;
+          margin: auto;
+        }
+        @media screen and (max-width: 768px) {
+          padding-top: 10rem;
+        }
+
+        &-logo {
+          width: auto;
+
+          @media screen and (max-width: 470px) {
+            width: 250px;
+          }
+          &_andel {
+            @media screen and (max-width: 530px) {
+              width: 250px;
+            }
+          }
+          &_eurosignal {
+            @media screen and (max-width: 340px) {
+              width: 250px;
+            }
+          }
+          &_magistra {
+            @media screen and (max-width: 530px) {
+              width: 250px;
+            }
+          }
+          &_rudolfinum {
+            @media screen and (max-width: 530px) {
+              width: 100%;
+            }
+          }
+          &_bakker {
+            @media screen and (max-width: 530px) {
+              width: 250px;
+            }
+          }
+        }
+      }
+
+      &_laptop {
+        width: 45rem;
+        @media screen and (max-width: 1420px) {
+          width: 100%;
+          margin-top: 5rem;
+        }
+        &_phones {
+          @media screen and (max-width: 1420px) {
+            margin-top: 0rem;
+          }
+        }
+      }
+
+      &_hideTablet {
+        @media screen and (max-width: 850px) {
+          display: none;
+        }
+      }
+
+      &_data {
+        & > div {
+          margin-bottom: 4rem;
+          @media screen and (max-width: 1200px) {
+            margin-bottom: 2rem;
+          }
+          @media screen and (max-width: 470px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            & > .company-titles {
+              align-self: center;
+              margin-bottom: 0.5rem;
+              width: auto;
+            }
+
+            & > .company-name,
+            .company-result,
+            .company-solution {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      &_pills {
+        bottom: 0;
+        left: -35px;
+        position: absolute;
+        z-index: 4;
+      }
+
+      &_pills2 {
+        position: absolute;
+        height: 13rem;
+        width: auto;
+        right: 0px;
+        bottom: -205px;
+        z-index: 3;
+        @media screen and (max-width: 950px) {
+          display: none;
+        }
+      }
+
+      &_wires {
+        bottom: -31px;
+        left: 0px;
+        z-index: 5;
+        width: 150px;
+        position: absolute;
+        @media screen and (max-width: 950px) {
+          bottom: -31px;
+          width: 100px;
+        }
+      }
+
+      &_driver {
+        bottom: -50px;
+        left: -53px;
+        z-index: 5;
+        width: 330px;
+        position: absolute;
+        @media screen and (max-width: 1200px) {
+          bottom: 80px;
+        }
+        @media screen and (max-width: 470px) {
+          bottom: -50px;
+        }
+      }
+
+      &_taxi {
+        position: absolute;
+        height: 12rem;
+        width: auto;
+        right: 0;
+        bottom: -15rem;
+        z-index: 5;
+        @media screen and (max-width: 1000px) {
+          height: 11rem;
+        }
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+
+      &_servers {
+        position: absolute;
+        height: 13rem;
+        width: auto;
+        right: 0;
+        bottom: -18rem;
+        z-index: 5;
+        @media screen and (max-width: 950px) {
+          display: none;
+        }
+      }
+
+      &_modem {
+        bottom: -31px;
+        left: -41px;
+        z-index: 5;
+        width: 200px;
+        position: absolute;
+
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
+      &_eurosignal_server {
+        position: absolute;
+        height: 12rem;
+        width: auto;
+        right: 0;
+        bottom: -17rem;
+        z-index: 5;
+        @media screen and (max-width: 1000px) {
+          height: 11rem;
+        }
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+      &_magistra-pills {
+        bottom: -32px;
+        left: -41px;
+        z-index: 5;
+        width: 200px;
+        position: absolute;
+
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
+
+      &_magistra_pills2 {
+        position: absolute;
+        height: 12rem;
+        width: auto;
+        right: 0;
+        bottom: -15rem;
+        z-index: 5;
+        @media screen and (max-width: 1000px) {
+          height: 11rem;
+        }
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+
+      &_statue {
+        bottom: -50px;
+        left: -42px;
+        z-index: 5;
+        width: 110px;
+        position: absolute;
+
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
+
+      &_vegetables {
+        bottom: -33px;
+        left: -41px;
+        z-index: 5;
+        width: 200px;
+        position: absolute;
+
+        @media screen and (max-width: 470px) {
+          display: none;
+        }
+      }
+
+      &_green_truck {
+        position: absolute;
+        height: 9rem;
+        width: auto;
+        right: 0;
+        bottom: -14rem;
+        z-index: 5;
+
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+    }
+    &--second {
+      background-color: var(--white-blue);
+      margin-top: -3.7rem;
+      position: relative;
+      padding: 6rem 0;
+      overflow: visible;
+      clip-path: polygon(0 13%, 100% 0%, 100% 78%, 0% 100%);
+      z-index: 1;
+
+      @media screen and (max-width: 480px) {
+        clip-path: polygon(0 11%, 100% 0%, 100% 78%, 0% 95%);
+        margin-top: -3rem;
+      }
+
+      &-greenswan {
+        padding: 5rem 0;
+      }
+
+      &-bakker {
+        padding: 6rem 0;
+      }
+
+      &-rudolfinum {
+        padding: 6rem 0;
+        @media screen and (max-width: 470px) {
+          clip-path: polygon(0 11%, 100% 0%, 100% 78%, 0% 95%);
+          padding-bottom: 10rem;
+          padding-top: 5rem;
+        }
+      }
+
+      &_link {
+        color: black;
+        cursor: pointer;
+      }
+
+      &_text {
+        font-weight: bold;
+        line-height: 25px;
+        margin: auto;
+        text-align: center;
+        width: 80%;
+
+        &-rudolfinum {
+          width: 57%;
+          @media screen and (max-width: 1000px) {
+            width: 80%;
+          }
+        }
+      }
+
+      &_rudolfinum_people {
+        position: absolute;
+        height: 16rem;
+        width: auto;
+        right: 0;
+        top: 3rem;
+        z-index: 5;
+
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
+    }
+    &--third {
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      padding: 5rem 20%;
+      background-position: 35% 0;
+      margin-top: -3rem;
+
+      @media screen and (max-width: 1000px) {
+        padding: 3rem 20%;
+        display: flex;
+        flex-direction: column;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 3rem 10%;
+      }
+
+      &_greenSwan {
+        background-image: url("../images/Refs/greenswan_conference_people.webp");
+      }
+
+      &_domena {
+        background-image: url("../images/Refs/domena_server_service.webp");
+      }
+
+      &_andel {
+        background-image: url("../images/Refs/modry_andel_customer.webp");
+      }
+      &_eurosignal {
+        background-image: url("../images/Refs/eurosignal_meeting.webp");
+        padding: 5rem 15%;
+      }
+      &_magistra {
+        background-image: url("../images/Refs/magistra_shelf.webp");
+        padding: 5rem 15%;
+      }
+
+      &_rudolfinum {
+        background-image: url("../images/Refs/rudolfinum_building.webp");
+        padding: 5rem 15%;
+      }
+
+      &_bakker {
+        background-image: url("../images/Refs/bakker_truck.webp");
+        padding: 5rem 10%;
+        display: flex;
+        flex-direction: column;
+
+        & > div {
+          margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: 1000px) {
+          padding: 5rem 10%;
+          & > div > .reference__block--third_text {
+            margin-left: 2rem;
+          }
+        }
+
+        @media screen and (max-width: 700px) {
+          & > div {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+          & > div > .reference__block--third_text {
+            margin-left: 0rem;
+          }
+        }
+      }
+
+      &_checkmark-box {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 580px) {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        & > div {
+          display: flex;
+          width: 40%;
+          margin-bottom: 1rem;
+          margin-right: 1rem;
+          @media screen and (max-width: 580px) {
+            width: 100%;
+          }
+        }
+      }
+
+      &_title {
+        color: var(--green-dark);
+        font-size: 28px;
+        font-weight: bold;
+        margin-right: 10rem;
+        @media screen and (max-width: 1200px) {
+          margin-right: 5rem;
+        }
+        @media screen and (max-width: 1000px) {
+          margin: 0;
+          margin-bottom: 2rem;
+        }
+
+        &_bakker {
+          width: 170px;
+          margin-right: 0;
+        }
+      }
+      &_text {
+        font-weight: bold;
+      }
+    }
+
+    &--fourth {
+      clip-path: polygon(0 22%, 100% 0%, 100% 79%, 0% 100%);
+      margin-top: -3rem;
+      padding: 10rem 0;
+      position: relative;
+      z-index: 1;
+
+      @media screen and (max-width: 1000px) {
+        clip-path: polygon(0 14%, 100% 0%, 100% 79%, 0% 94%);
+      }
+
+      @media screen and (max-width: 850px) {
+        padding: 8rem 0;
+        margin-top: -2rem;
+      }
+
+      @media screen and (max-width: 600px) {
+        clip-path: polygon(0 10%, 100% 0%, 100% 79%, 0% 90%);
+      }
+
+      &_bgvideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.6;
+        overflow: hidden;
+      }
+
+      &_videocontent {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &--fifth {
+      background-image: url("../images/calendar_background.png");
+      background-size: cover;
+      position: relative;
+      padding-top: 4rem;
+      padding-bottom: 14rem;
+      margin-top: -5rem;
+      @media screen and (max-width: 900px) {
+        background-image: none;
+      }
+
+      &_plan {
+        width: 100%;
+
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+
+        &-sm {
+          max-width: 900px;
+          margin: auto;
+        }
+
+        &-md {
+          max-width: 1200px;
+          margin: auto;
+        }
+      }
+
+      &_points {
+        position: absolute;
+        background-color: white;
+        background-size: cover;
+        background-position: 100% 0;
+        box-shadow: 19px 13px 27px -7px rgba(89, 200, 220, 0.397);
+        -webkit-box-shadow: 19px 13px 27px -7px rgba(89, 200, 220, 0.397);
+        border-radius: 14px;
+        margin: auto;
+        padding: 4rem;
+        transform: translateX(50%);
+        right: 50%;
+        width: 70%;
+
+        &-domena {
+          background-image: url("../images/Refs/domena_tablet.webp");
+        }
+
+        &-andel {
+          background-image: url("../images/Refs/modry_andel_tablet.webp");
+        }
+
+        &-eurosignal {
+          background-image: url("../images/Refs/eurosignal_tablet.webp");
+        }
+
+        &-magistra {
+          background-image: url("../images/Refs/magistra_tablet.webp");
+        }
+
+        &-rudolfinum {
+          background-image: url("../images/Refs/rudolfinum_tablet.webp");
+        }
+
+        &-bakker {
+          background-image: url("../images/Refs/bakker_tablet.webp");
+        }
+
+        & > div {
+          max-width: 446px;
+        }
+
+        @media screen and (max-width: 1050px) {
+          background-image: none !important;
+        }
+
+        @media screen and (max-width: 500px) {
+          padding: 2rem;
+        }
+
+        & > div {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+
+    &--sixth {
+      padding-top: 24rem;
+      position: relative;
+      padding-bottom: 1rem;
+
+      @media screen and (max-width: 500px) {
+        padding-top: 28rem;
+      }
+      @media screen and (max-width: 380px) {
+        padding-top: 30rem;
+      }
+
+      &-magistra {
+        @media screen and (max-width: 500px) {
+          padding-top: 13rem;
+        }
+        @media screen and (max-width: 380px) {
+          padding-top: 13rem;
+        }
+      }
+
+      &_header {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      &_box {
+        background-color: var(--white-blue);
+        border-radius: 14px;
+        margin: 0.3rem;
+        height: 96px;
+        padding: 0.7rem;
+        width: 20%;
+        box-sizing: border-box;
+        position: relative;
+
+        @media screen and (max-width: 1200px) {
+          min-width: 180px;
+        }
+
+        &-management:hover {
+          background-image: url("../images/Refs/project_managment.png");
+        }
+
+        &-users:hover {
+          background-image: url("../images/Refs/users_adaptation.jpg");
+        }
+        &-detail_process:hover {
+          background-image: url("../images/Refs/detailed_process.jpg");
+        }
+        &-map_integration:hover {
+          background-image: url("../images/Refs/integration.jpg");
+        }
+        &-system_plan:hover {
+          background-image: url("../images/Refs/system_plan.jpg");
+        }
+        &-programing:hover {
+          background-image: url("../images/Refs/programing.jpg");
+        }
+        &-cloud:hover {
+          background-image: url("../images/Refs/cloud_development.jpg");
+        }
+        &-system_integration:hover {
+          background-image: url("../images/Refs/system_integration.jpg");
+        }
+        &-analytics_models:hover {
+          background-image: url("../images/Refs/analytics_models.jpg");
+        }
+        &-mobile_apps:hover {
+          background-image: url("../images/Refs/mobile_apps.jpg");
+        }
+        &-mobile_integration:hover {
+          background-image: url("../images/Refs/mobile_integration.jpg");
+        }
+
+        &:hover {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 10px 0;
+          transition: all 0.8s;
+
+          &::after {
+            border: 2px solid var(--lighter-blue);
+            transform: rotate(2deg);
+          }
+        }
+
+        &::after {
+          content: "";
+          display: inline-block;
+          height: 99%;
+          width: 99%;
+          background-color: white;
+          border-radius: 14px;
+          position: absolute;
+          top: -1px;
+          left: 0;
+          z-index: -1;
+          transition: all 0.4s;
+        }
+      }
+
+      &_links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 80%;
+      }
+
+      &_title {
+        margin-bottom: 0.3rem;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      &_detail {
+        color: var(--lighter-blue);
+      }
+    }
+
+    &--seventh {
+      background-image: url("../images/Refs/refs_meeting.webp");
+      background-position: 65% 0;
+      background-size: cover;
+      position: relative;
+      z-index: 1;
+      clip-path: polygon(0 23%, 100% 0%, 100% 75%, 0% 100%);
+      @media screen and (max-width: 950px) {
+        clip-path: polygon(0% 12%, 100% 0%, 100% 75%, 0% 100%);
+      }
+      @media screen and (max-width: 600px) {
+        clip-path: polygon(0 11%, 100% 0%, 100% 99%, 0% 100%);
+      }
+
+      &_background {
+        background-color: #f9fdfe82;
+        height: auto;
+        text-align: center;
+        padding: 5rem 0;
+        padding-bottom: 8rem;
+      }
+
+      &_dots {
+        top: 2rem;
+        background-image: url("../images/doted_line.png");
+        height: 7rem;
+        position: absolute;
+        right: 50%;
+        width: 2px;
+      }
+
+      &_title {
+        color: var(--lighter-blue);
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 1rem;
+      }
+
+      &_text {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      &_large {
+        margin-top: 1.5rem;
+        font-size: 28px;
+        color: var(--lighter-green);
+        font-weight: bold;
+      }
+    }
+
+    &--eighth {
+      background-image: url("../images/Refs/laptop_hands.webp");
+      background-size: cover;
+      background-position: 100% 31%;
+      height: 22rem;
+      margin-top: -8rem;
+      position: relative;
+      clip-path: polygon(0 22%, 100% 0%, 100% 99%, 0% 100%);
+      z-index: 2;
+      margin-bottom: -1rem;
+
+      @media screen and (max-width: 950px) {
+        clip-path: polygon(0 15%, 100% 0%, 100% 99%, 0% 100%);
+      }
+
+      @media screen and (max-width: 600px) {
+        margin-top: -7rem;
+        clip-path: polygon(0 11%, 100% 0%, 100% 99%, 0% 100%);
+        height: 16rem;
+      }
+
+      &_background {
+        background-color: rgba(6, 11, 39, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        @media screen and (max-width: 540px) {
+          flex-direction: column;
+        }
+
+        & > a:not(:last-child) {
+          margin-right: 1rem;
+          @media screen and (max-width: 540px) {
+            margin: 0;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+
+      &_link {
+        background: var(--lighter-green);
+        border-radius: 30px;
+        color: white;
+        font-size: 14px;
+        padding: 13px 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}

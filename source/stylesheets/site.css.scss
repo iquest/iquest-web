@@ -62,9 +62,12 @@ $bright-orange: #f18c4f;
 $orange: #fdd7a8;
 $yellow-dark: #dfdb71;
 $blue: #00d6cf;
+$lighter-blue: #5fcbe1;
 $green: #00ceb3;
+$lighter-green: #00cfb6;
 $border-radius: 12px;
 $cerculean: #4590af;
+$white-blue: #f9fdfe;
 $white: #fff;
 $body-text-color: #1e1e1e;
 
@@ -73,7 +76,10 @@ $body-text-color: #1e1e1e;
   --dark-gray: #494f5c;
   --light-gray: #e0e0e0;
   --middle-gray: #7f8f9c;
+  --lighter-green: #00cfb6;
+  --green-dark: #009482;
   --blue: #00d6cf;
+  --lighter-blue: #5fcbe1;
   --green: #00ceb3;
   --yellow: #f2e999;
   --bright-orange: #f18c4f;
@@ -81,6 +87,7 @@ $body-text-color: #1e1e1e;
   --space-sm: 20px;
   --cerculean: #4590af;
   --white: #fff;
+  --white-blue: #f9fdfe;
 }
 
 $space-lg: 60px;
@@ -92,6 +99,7 @@ $space-lg: 60px;
 @import "subpage.css";
 @import "educational_content.css";
 @import "pf2018.css";
+@import "references.css";
 
 @keyframes fadeIn {
   0% {
@@ -161,9 +169,22 @@ $space-lg: 60px;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(6, 11, 39, 0.81);
   z-index: 5;
+}
+
+.modal-button {
+  background: var(--lighter-green);
+  border-radius: 30px;
+  color: white;
+  font-size: 14px;
+  padding: 13px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.color-light-green {
+  color: var(--lighter-green);
 }
 
 /* Display the modal when targeted */
@@ -181,14 +202,29 @@ $space-lg: 60px;
 /* The modal's content */
 .modal-dialog .modal-content {
   margin: auto;
-  background-color: $light-gray;
+  background-image: url("../images/Refs/modal_background.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-color: white;
   position: relative;
-  padding: 0;
+  padding: 26px;
   outline: 0;
+  border-radius: 14px;
   border: 1px $middle-gray solid;
   text-align: justify;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 $light-gray;
+
+  @media (max-width: 768px) {
+    max-height: 90vh;
+    overflow-y: scroll;
+    background-image: none;
+  }
+  @media (max-width: 500px) {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
 
   /* Add animation */
   -webkit-animation-name: example; /* Chrome, Safari, Opera */
@@ -202,7 +238,6 @@ $space-lg: 60px;
   text-decoration: none;
   float: right;
   font-size: 35px;
-  font-weight: bold;
   color: $white;
   position: absolute;
   top: 0;
@@ -213,31 +248,26 @@ $space-lg: 60px;
   height: 35px;
   margin: 0;
   padding: 0;
-
   cursor: pointer;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
   text-decoration: none;
-  color: #95979c;
+  color: #5fcbe1;
   border: 0;
   outline: 0;
   background: transparent;
   &:hover,
   &:focus {
-    color: #2b2e38;
+    color: rgb(36, 40, 51);
   }
   &:before {
-    font-size: 25px;
+    font-size: 37px;
     line-height: 35px;
-
     position: absolute;
     top: 0;
     left: 0;
-
     display: block;
-
     width: 35px;
-
     content: "\00d7";
     text-align: center;
   }
@@ -340,6 +370,19 @@ $space-lg: 60px;
 
 .text-cerculean {
   color: $cerculean;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.text-titile-modal {
+  color: #060b27;
+  font-weight: bold;
 }
 
 .uppercase {
@@ -465,8 +508,36 @@ b {
   display: table !important;
 }
 
+.m-auto {
+  margin: auto;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
 .flex {
   display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
 }
 
 .flex-column {
