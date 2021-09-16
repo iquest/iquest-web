@@ -37,6 +37,10 @@
       height: 900px;
       position: relative;
 
+      @media screen and (max-width: 768px) {
+        height: 800px;
+      }
+
       &_greenswan {
         background-image: url("../images/Refs/greenswan_background.jpg");
       }
@@ -46,10 +50,10 @@
           height: 750px;
         }
         @media screen and (max-width: 550px) {
-          height: 800px;
+          height: 700px;
         }
         @media screen and (max-width: 450px) {
-          height: 870px;
+          height: 770px;
         }
       }
 
@@ -60,6 +64,9 @@
         background-image: url("../images/Refs/eurosignal_background.jpg");
         @media screen and (max-width: 800px) {
           height: 960px;
+        }
+        @media screen and (max-width: 768px) {
+          height: 860px;
         }
       }
       &_magistra {
@@ -73,6 +80,9 @@
         background-image: url("../images/Refs/bakker_background.jpg");
         @media screen and (max-width: 850px) {
           height: 770px;
+        }
+        @media screen and (max-width: 768px) {
+          height: 670px;
         }
       }
 
@@ -90,6 +100,9 @@
           width: 80%;
           padding-left: 0;
           margin: auto;
+        }
+        @media screen and (max-width: 768px) {
+          padding-top: 10rem;
         }
 
         &-logo {
@@ -116,6 +129,11 @@
           &_rudolfinum {
             @media screen and (max-width: 530px) {
               width: 100%;
+            }
+          }
+          &_bakker {
+            @media screen and (max-width: 530px) {
+              width: 250px;
             }
           }
         }
@@ -631,7 +649,7 @@
     &--sixth {
       padding-top: 24rem;
       position: relative;
-      padding-bottom: 8rem;
+      padding-bottom: 1rem;
 
       @media screen and (max-width: 500px) {
         padding-top: 28rem;
@@ -752,16 +770,29 @@
     }
 
     &--seventh {
-      text-align: center;
-      padding: 4rem 0;
       background-image: url("../images/Refs/refs_meeting.webp");
       background-position: 65% 0;
       background-size: cover;
       position: relative;
       z-index: 1;
+      clip-path: polygon(0 23%, 100% 0%, 100% 75%, 0% 100%);
+      @media screen and (max-width: 950px) {
+        clip-path: polygon(0% 12%, 100% 0%, 100% 75%, 0% 100%);
+      }
+      @media screen and (max-width: 600px) {
+        clip-path: polygon(0 11%, 100% 0%, 100% 99%, 0% 100%);
+      }
+
+      &_background {
+        background-color: #f9fdfe82;
+        height: auto;
+        text-align: center;
+        padding: 5rem 0;
+        padding-bottom: 8rem;
+      }
 
       &_dots {
-        top: 1rem;
+        top: 2rem;
         background-image: url("../images/doted_line.png");
         height: 7rem;
         position: absolute;
@@ -790,11 +821,11 @@
     }
 
     &--eighth {
-      background-image: url("../images/Refs/greenswan_hands.webp");
+      background-image: url("../images/Refs/laptop_hands.webp");
       background-size: cover;
       background-position: 100% 31%;
       height: 22rem;
-      margin-top: -4rem;
+      margin-top: -8rem;
       position: relative;
       clip-path: polygon(0 22%, 100% 0%, 100% 99%, 0% 100%);
       z-index: 2;
@@ -805,6 +836,7 @@
       }
 
       @media screen and (max-width: 600px) {
+        margin-top: -7rem;
         clip-path: polygon(0 11%, 100% 0%, 100% 99%, 0% 100%);
         height: 16rem;
       }
