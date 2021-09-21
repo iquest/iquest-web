@@ -966,6 +966,10 @@ body {
   top: 0;
   width: 340px;
   z-index: 10;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 #menu .menu-header {
