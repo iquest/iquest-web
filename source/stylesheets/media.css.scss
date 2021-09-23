@@ -1504,11 +1504,11 @@
 
 @media screen and (max-height: 700px) and (min-width: 768px) {
   #opening > .title {
-    height: 70vh;
+    height: 40vw;
   }
 
   .main-container {
-    height: 30vh;
+    height: 30vw;
   }
 
   .wavy-background {
@@ -1517,17 +1517,7 @@
   }
 
   .info .icons-container {
-    a.box {
-      flex-direction: row !important;
-      width: auto !important;
-      .text {
-        padding-left: 10px;
-        text-align: start;
-      }
-      &:not(:last-child) {
-        margin-right: 5px;
-      }
-    }
+
     img {
       max-width: 64px !important;
       max-height: 64px !important;
@@ -1807,29 +1797,20 @@ $mobile-padding-sm: 15px;
 
 
 /*horizontal mobile*/
-@media screen and (max-height: 415px) and (max-width: 830px) and (min-width: 640px) {
+@media screen and (max-height: 415px) and (max-width: 830px) and (min-width: 690px) {
   #opening > .title {
     height: 42vw;
   }
   .main-container {
-    height: 30vw
+    height: 42vw
   }
 }
 
-@media screen and (max-height: 390px) and (max-width: 700px) and (min-width: 639px) {
+@media screen and (max-height: 415px) and (max-width: 690px) and (min-width: 580px) {
   #opening > .title {
-    height: 32vw;
+    height: 42vw;
   }
   .main-container {
-    height: 44vw;
-  }
-}
-
-@media screen and (max-height: 360px) and (max-width: 640px) and (min-width: 639px) {
-  #opening > .title {
-    height: 54vh;
-  }
-  .main-container {
-    height: 86vh;
+    height: 50vw
   }
 }
