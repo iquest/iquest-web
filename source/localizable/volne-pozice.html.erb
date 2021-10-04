@@ -2,41 +2,22 @@
 title: Hledáme vývojáře v Praze a Brně | iQuest s.r.o.
 subtitle: Do našeho týmu přijmeme vývojáře - Frontend a Backend developery. iQuest je stabilní vývojářský tým, který již více než 17 let tvoří rozsáhlá webová řešení a mobilní aplikace.
 ---
-<div class="page-offset volne-offset">
-	<div class="circles">
-		<div class="bg-point4 circle index1 orange" data-aos="zoom-in"></div>
-		<div class="bg-point5 circle index2 orange" data-aos="zoom-in"></div>
-		<div class="bg-point1 circle index1 yellow" data-aos="zoom-in"></div>
-		<div class="bg-point2 circle index2 yellow" data-aos="zoom-in"></div>
-		<div class="bg-point3 circle index3 yellow" data-aos="zoom-in"></div>
-		<div class="bg-point7 circle index1 blue" data-aos="zoom-in"></div>
-		<div class="bg-point8 circle index2 blue" data-aos="zoom-in"></div>
-		<div class="bg-point9 circle index3 blue" data-aos="zoom-in"></div>
-		<div class="bg-point10 circle index1 green" data-aos="zoom-in"></div>
-	</div>
-	<div class="row">
-		<div class="col-40">
-			<h1 class="h1-volne" data-aos="fade-right">Volné pozice:</h1>
-			<img alt="volné pozice v iQuest s.r.o." src="/images/volne_pozice.jpg" class="volne-img" data-aos="fade-right">
-		</div>
-		<div class="col-offset-10 col-35 volne-text">
-			<div class="row" data-aos="fade-left">
-				<% link_to t('urls.frontend_developer') do %>
-				<h1 class="volne-dev-h1">Frontend developer Praha</h1>
-				<% end  %>
-				<p class="volne-text-p">Pozice je vhodná pro senior developera i pro šikovného programátora, který se třeba nyní
-					věnuje tvorbě běžných webů a chce se posunout dále.</p>
-			</div>
-			<div class="row" data-aos="fade-left">
-				<% link_to t('urls.backend_developer') do %>
-				<h1 class="volne-dev-h1">Backend vývojář v Ruby on Rails Praha/Brno</h1>
-				<% end  %>
-				<p class="volne-text-p">Pozice je vhodná pro senior developera i pro šikovného junior programátora, který umí
-					programovací jazyk ruby a má zkušenosti v backend vývoji.</p>
-			</div>
-		</div>
-	</div>
-	<iframe src="https://iquest-questionnaire.netlify.app" height="300px" width="300px">
-</div>
 
+<script>
+window.onmessage = function(e) {
+	if (e.data.type === 'myHeight') {
+			console.log('1', e.data.height)
+			document.getElementById('questionareIframe').setAttribute('height', e.data.height)
+	}
+};</script>
+
+<iframe src="https://iquest-questionnaire.netlify.app"
+		id='questionareIframe'
+		frameborder="0"
+		scrolling="no" height="100%" width="100%"
+		></iframe>
 <%= partial 'footer' %>
+
+
+
+
