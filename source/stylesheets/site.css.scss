@@ -4897,3 +4897,9 @@ form {
   border: none;
   width: 100%;
 }
+
+.questionnaire {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+}
