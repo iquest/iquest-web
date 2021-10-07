@@ -9,6 +9,9 @@ window.onmessage = function(e) {
 			console.log('1', e.data.height)
 			document.getElementById('questionareIframe').setAttribute('height', e.data.height)
 	}
+	if (e.data.type === 'scrollToTop') {
+		window.scrollTo(0, 250);
+	}
 };</script>
 
 <iframe src="https://iquest-questionnaire.netlify.app"
