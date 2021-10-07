@@ -6,7 +6,6 @@ subtitle: Do našeho týmu přijmeme vývojáře - Frontend a Backend developery
 <script>
 window.onmessage = function(e) {
 	if (e.data.type === 'myHeight') {
-			console.log('1', e.data.height)
 			document.getElementById('questionareIframe').setAttribute('height', e.data.height)
 	}
 	if (e.data.type === 'scrollToTop') {
