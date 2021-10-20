@@ -588,6 +588,14 @@ b {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -3603,6 +3611,45 @@ body.posa .page-scroll-show .header {
   line-height: 150%;
   padding: 20px 0;
   width: 100%;
+
+  &_block {
+    width: 80%;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    &-padding {
+      @media (max-width: 768px) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    &:last-child {
+      float: right;
+      @media (max-width: 768px) {
+        float: none;
+      }
+    }
+  }
+
+  &_main-contacts {
+    display: flex;
+    justify-content: center;
+
+    & > h4:first-of-type {
+      margin-right: 2rem;
+      @media (max-width: 440px) {
+        margin-right: 0px;
+      }
+    }
+    @media (max-width: 440px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   .container {
     box-sizing: border-box;
     padding: 0 25px;
