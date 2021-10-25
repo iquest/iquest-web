@@ -19,6 +19,8 @@ cz:
     verejne_aplikace: "/verejne-mobilni-aplikace"
     blog: "http://blog.iquest.cz/"
     volne_pozice: "/volne-pozice"
+    react_vyvojar: "/react-vyvojar"
+    ruby_vyvojar: "/ruby-vyvojar"
     frontend_developer: "/frontend-developer"
     backend_developer: "/backend-developer"
     # Kinds of products

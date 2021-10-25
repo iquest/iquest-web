@@ -6,5 +6,5 @@
 /blog https://blog.iquest.cz 301
 
 #volne-pozice
-/backend-developer https://www.iquest.cz/volne-pozice 301
-/frontend-developer https://www.iquest.cz/volne-pozice 301
+/backend-developer /volne-pozice 301
+/frontend-developer /volne-pozice 301
