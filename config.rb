@@ -108,3 +108,5 @@ end
 configure :development do
   # activate :livereload
 end
+
+import_file File.expand_path("_redirects", config[:source]), "/_redirects"
