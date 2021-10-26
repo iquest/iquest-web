@@ -2,83 +2,106 @@
 title: Hledáme vývojáře v Praze a Brně | iQuest s.r.o.
 subtitle: Do našeho týmu přijmeme vývojáře - Frontend a Backend developery. iQuest je stabilní vývojářský tým, který již více než 17 let tvoří rozsáhlá webová řešení a mobilní aplikace.
 ---
-<div>
-		<script>
-		window.onmessage = function(e) {
-			if (e.data.type === 'myHeight') {
-					document.getElementById('questionareIframe').setAttribute('height', e.data.height)
-			}
-			if (e.data.type === 'scrollToTop') {
-				window.scrollTo(0, 250);
-			}
-		};</script>
 
-		<iframe src="https://iquest-questionnaire.netlify.app"
-		id='questionareIframe'
-		frameborder="0"
-		scrolling="no" height="100%" width="100%"
-		></iframe>
- 			<div className="ready-second-block">
-        <p className="header2 text-center">
-          <span className="color-dark-green">Spokojený kolega -</span> náš cíl
-        </p>
-        <div className="flex justify-center">
-          <div className=" ready-pick-box ready-pick-box-front">
-            <div className="ready-pick-box-background">
-              <div className="ready-pick-box-feature"></div>
-              <div className="header3">React vývojář</div>
-              <strong className="color-dark-green">Senior &bull; Junior</strong>
-              <br />
-              <strong className="color-grey flex align-center m-b-1">
-                <img className="m-r-1" alt="marker" src="/images/place.svg" />{" "}
-                Praha / Brno / Externě
-              </strong>
-              <div className="ready_link-margin">
-                <a
-                  className="button-primary link"
-                  href="https://www.iquest.cz/react-vyvojar"
-                >
-                  Zajímá mě to
-                </a>
-              </div>
-              <br />
-            </div>
+<div>
+  <script>
+    window.onmessage = function (e) {
+      if (e.data.type === "myHeight") {
+        document
+          .getElementById("questionareIframe")
+          .setAttribute("height", e.data.height);
+      }
+      if (e.data.type === "scrollToTop") {
+        window.scrollTo(0, 250);
+      }
+      if (e.data.type === "hide") {
+        e.data.hide
+          ? document
+              .getElementById("workWindow")
+              .classList.remove("window-show")
+          : document
+              .getElementById("workWindow")
+              .classList.remove("window-hide");
+      }
+      if (e.data.type === "hide") {
+        e.data.hide
+          ? document.getElementById("workWindow").classList.add("window-hide")
+          : document.getElementById("workWindow").classList.add("window-show");
+      }
+    };
+  </script>
+
+  <iframe
+    src="https://iquest-questionnaire.netlify.app"
+    id="questionareIframe"
+    frameborder="0"
+    scrolling="no"
+    height="100%"
+    width="100%"
+  ></iframe>
+
+  <script>
+    const iFrame = document.getElementById("questionareIframe");
+    const sendMessage = () => {
+      iFrame.contentWindow.postMessage(
+        { type: "test", message: "back-end" },
+        "*"
+      );
+    };
+  </script>
+  <div id="workWindow" class="ready-second-block">
+    <p class="header2 text-center">
+      Volné <span class="color-dark-green">pracovní pozice</span>
+    </p>
+    <div class="flex justify-center">
+      <div class="ready-pick-box ready-pick-box-front">
+        <div class="ready-pick-box-background">
+          <div></div>
+          <div class="header3">React vývojář</div>
+          <strong class="color-dark-green">Senior &bull; Junior</strong>
+          <br />
+          <strong class="color-grey flex align-center m-b-4">
+            <img class="m-r-4" alt="marker" src="/images/place.svg" />
+            Praha / Brno / Externě
+          </strong>
+          <div class="ready_link-margin">
+            <a
+              class="button-ready link"
+              href="https://www.iquest.cz/react-vyvojar"
+            >
+              Zajímá mě to
+            </a>
           </div>
-          <div className=" ready-pick-box ready-pick-box-back">
-            <div className="ready-pick-box-background">
-              <div className="ready-pick-box-feature"></div>
-              <div className="header3">Ruby on Rails vývojář</div>
-              <strong className="color-dark-green break-word">
-                Senior &bull; Junior &bull; Zkušený v jiném jazyce
-              </strong>
-              <br />
-              <strong className="color-grey flex align-center m-b-1">
-                <img className="m-r-1" alt="marker" src="/images/place.svg" />{" "}
-                Praha / Brno / Externě
-              </strong>
-              <div className="ready_link-margin">
-                <a
-                  className="button-primary link"
-                  href="https://www.iquest.cz/ruby-vyvojar"
-                >
-                  Zajímá mě to
-                </a>
-              </div>
-              <Button
-                className="text-start font-18 "
-                state="link"
-                onClick={() => redirectMe("back-end")}
-              >
-                Otestujte nezávazně své znalosti
-              </Button>
-              <br />
-            </div>
-          </div>
+          <br />
         </div>
       </div>
+      <div class="ready-pick-box ready-pick-box-back">
+        <div class="ready-pick-box-background">
+          <div class="ready-pick-box-feature"></div>
+          <div class="header3">Ruby on Rails vývojář</div>
+          <strong class="color-dark-green break-word">
+            Senior &bull; Junior &bull; Zkušený v jiném jazyce
+          </strong>
+          <br />
+          <strong class="color-grey flex align-center m-b-4">
+            <img class="m-r-4" alt="marker" src="/images/place.svg" />
+            Praha / Brno / Externě
+          </strong>
+          <div class="ready_link-margin">
+            <a
+              class="button-ready link"
+              href="https://www.iquest.cz/ruby-vyvojar"
+            >
+              Zajímá mě to
+            </a>
+          </div>
+          <button class="test-link text-start font-18" onclick="sendMessage()">
+            Otestujte nezávazně své znalosti
+          </button>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <%= partial 'footer' %>
-
-
-
-

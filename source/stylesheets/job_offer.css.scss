@@ -1,8 +1,23 @@
+.window {
+  &-hide {
+    display: none;
+  }
+
+  &-show {
+    display: block;
+  }
+}
+
 .ready {
+  &_link-margin {
+    margin-bottom: 1.5rem !important;
+    margin-top: 0.7rem;
+  }
+
   &-second-block {
     position: fixed;
     right: 0;
-    top: 15%;
+    top: 15rem;
     padding: 0.3rem;
     background-color: white;
     margin-top: -3rem;
@@ -11,5 +26,125 @@
     border-radius: 16px 0 0 16px;
     z-index: 4;
     box-shadow: -4rem 4rem 1.6rem -62px #b3c9cc;
+
+    @media (max-width: 950px) {
+      display: none;
+    }
+
+    & > .flex {
+      flex-direction: column;
+      min-width: auto;
+    }
   }
+
+  &-pick-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    position: relative;
+    max-width: 500px;
+
+    & > div > div {
+      margin-bottom: 0.7rem;
+    }
+
+    & > div > div > a {
+      font-size: 14px;
+    }
+
+    &-background {
+      background-color: #f9fdfe82;
+      display: flex;
+      flex-direction: column;
+      padding-left: 6rem;
+      width: calc(100% - 6rem);
+      height: 100%;
+      border-radius: 14px;
+
+      @media (max-width: 950px) {
+        padding-left: 0;
+        width: 100%;
+        align-items: center;
+      }
+    }
+
+    &-front {
+      background-image: url("../images/front_end-background.jpg");
+      background-repeat: no-repeat;
+      margin: 0.5rem;
+      border-radius: 16px;
+      background-size: cover;
+      @media (max-width: 750px) {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &-back {
+      background-image: url("../images/back_end-background.jpg");
+      background-repeat: no-repeat;
+      border-radius: 16px;
+      margin: 0.5rem;
+
+      background-size: cover;
+      @media (max-width: 750px) {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.header2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 1rem;
+
+  &-0-margin {
+    margin: 0;
+  }
+}
+
+.header3 {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.button-ready {
+  background: #00cfb6;
+  border-radius: 30px;
+  color: white;
+  padding: 14px 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+  @media (max-width: 500px) {
+    padding: 13px 20px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.color {
+  &-dark-green {
+    color: #009482;
+  }
+
+  &-grey {
+    color: #9ba8bc;
+  }
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.test-link {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
 }
