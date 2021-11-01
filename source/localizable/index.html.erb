@@ -4,6 +4,14 @@ subtitle: Již přes 17 let vyvíjíme webové aplikace, informační systémy a
 redirect_url: '/'
 ---
 <div id="opening">
+	<iframe
+    src="https://iquest-questionnaire.netlify.app"
+    id="questionareIframe"
+    frameborder="0"
+    scrolling="no"
+    class="hidden"
+  ></iframe>
+
 	<address class="text-center" data-aos="fade-down">
 		<span class="nowrap">
 			<a href="tel:+420777314768" class="c-phone"><i class="fa fa-phone"></i> 777 314 768</a>,
@@ -59,13 +67,13 @@ redirect_url: '/'
 					<% end %>
 					<% link_to t('urls.design_a_system'), class: "col2 col", :'data-aos' => 'fade-up' do %>
 						<span></span>
-					<% end %> 
+					<% end %>
 					<% link_to t('urls.software_development'), class: "col3 col", :'data-aos' => 'fade-down' do %>
 						<span></span>
-					<% end %> 
+					<% end %>
 					<% link_to t('urls.developers'), class: "col4 col", :'data-aos' => 'fade-up' do %>
 						<span></span>
-					<% end %> 
+					<% end %>
 				</div>
 			</div>
 		</div>
@@ -156,22 +164,22 @@ redirect_url: '/'
 	document.querySelectorAll('.reference .circle').forEach(function(circle) {
 		circle.addEventListener('mouseenter', function() {
 			circle.classList.add('animated');
-			circle.classList.add('pulse'); 
+			circle.classList.add('pulse');
 		})
 		circle.addEventListener('mouseleave', function() {
 			circle.classList.remove('animated');
-			circle.classList.remove('pulse'); 
+			circle.classList.remove('pulse');
 		})
-	}) 
+	})
 
 	document.querySelectorAll('.info .box').forEach(function(box) {
 		box.addEventListener('mouseenter', function() {
 			box.querySelector("img").classList.add('animated');
-			box.querySelector("img").classList.add('pulse'); 
+			box.querySelector("img").classList.add('pulse');
 		})
 		box.addEventListener('mouseleave', function() {
 			box.querySelector("img").classList.remove('animated');
-			box.querySelector("img").classList.remove('pulse'); 
+			box.querySelector("img").classList.remove('pulse');
 		})
-	}) 
+	})
 </script>
