@@ -17,7 +17,7 @@ cz:
     startups: "/startups"
     mobilni_aplikace: "/podnikove-mobilni-aplikace"
     verejne_aplikace: "/verejne-mobilni-aplikace"
-    blog: "http://blog.iquest.cz/"
+    blog: "https://blog.iquest.cz/"
     volne_pozice: "/volne-pozice"
     react_vyvojar: "/react-vyvojar"
     ruby_vyvojar: "/ruby-vyvojar"
