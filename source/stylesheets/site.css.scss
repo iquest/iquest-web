@@ -4968,3 +4968,33 @@ form {
   flex-direction: column-reverse;
   height: 100%;
 }
+
+.footer-eu {
+  display: flex;
+  justify-content: center;
+  .wrapper {
+    @media (max-width: 768px) {
+      padding-left: 1em !important;
+      padding-right: 1em !important;
+    }
+  }
+
+  .header {
+    font-size: 1.35rem;
+    font-weight: bold;
+  }
+
+  .subheader {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    font-size: 1rem;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
