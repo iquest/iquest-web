@@ -11,13 +11,27 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || I18n.t('default_meta_title') %></title>
 
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2c7c472d-babd-448d-a135-e7f42faf4f5e" data-blockingmode="auto" type="text/javascript"></script>
+    <script>
+      var CookiebotScriptContainer = document.getElementsByTagName("script")[0],
+          CookiebotScript = document.createElement("script");
+
+      CookiebotScript.type = "text/javascript";
+      CookiebotScript.id = "Cookiebot";
+      CookiebotScript.src = "https://consent.cookiebot.com/uc.js" +
+        "?cbid=2c7c472d-babd-448d-a135-e7f42faf4f5e" +
+        "&consentmode=disabled";
+
+      CookiebotScriptContainer.parentNode.insertBefore(
+        CookiebotScript,
+        CookiebotScriptContainer
+      );
+    </script>
 
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;800&display=swap" rel="stylesheet">
 
     <%= stylesheet_link_tag :site %>
     <%= stylesheet_link_tag :media %>
@@ -66,7 +80,6 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" />
-    <script id="CookieDeclaration" src="https://consent.cookiebot.com/2c7c472d-babd-448d-a135-e7f42faf4f5e/cd.js" type="text/javascript" async></script>
 
     <script type="text/javascript">
   var leady_track_key="WQArNlY1VcK537Af";
