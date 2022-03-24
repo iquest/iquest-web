@@ -11,22 +11,6 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || I18n.t('default_meta_title') %></title>
 
-    <script>
-      var CookiebotScriptContainer = document.getElementsByTagName("script")[0],
-          CookiebotScript = document.createElement("script");
-
-      CookiebotScript.type = "text/javascript";
-      CookiebotScript.id = "Cookiebot";
-      CookiebotScript.src = "https://consent.cookiebot.com/uc.js" +
-        "?cbid=2c7c472d-babd-448d-a135-e7f42faf4f5e" +
-        "&consentmode=disabled";
-
-      CookiebotScriptContainer.parentNode.insertBefore(
-        CookiebotScript,
-        CookiebotScriptContainer
-      );
-    </script>
-
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
